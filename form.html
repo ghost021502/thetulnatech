@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna PCs | Customer Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Luna PCs</h1>
+        <h2>Powerful Computers. Built For You.</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="location.html">Location & Hours</a>
+            <a href="form.html">Customer Form</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Customer Information</h2>
+
+            <p>
+                Please complete the form below so we can better
+                understand your computer needs.
+            </p>
+
+            <form>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname"
+                       placeholder="Enter your full name" required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number">
+
+                <br><br>
+
+                <label for="computer">What type of computer are you interested in?</label>
+                <input list="computers" id="computer" name="computer"
+                       placeholder="Choose a computer">
+
+                <datalist id="computers">
+                    <option value="Gaming PC">
+                    <option value="Workstation PC">
+                    <option value="Office PC">
+                    <option value="School PC">
+                    <option value="Custom PC">
+                </datalist>
+
+                <br><br>
+
+                <label for="budget">Estimated Budget:</label>
+                <input type="number" id="budget" name="budget"
+                       placeholder="Enter your budget">
+
+                <br><br>
+
+                <label for="password">Create a Password:</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Enter a password">
+
+                <br><br>
+
+                <label for="date">Preferred Contact Date:</label>
+                <input type="date" id="date" name="date">
+
+                <br><br>
+
+                <label for="message">Additional Comments:</label>
+                <br>
+                <textarea id="message" name="message"
+                          rows="5" cols="40"
+                          placeholder="Tell us what you are looking for"></textarea>
+
+                <br><br>
+
+                <input type="submit" value="Submit Form">
+                <input type="reset" value="Clear Form">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>Contact Luna PCs</h3>
+
+        <p>236 Technology Drive, Pennsauken, NJ 08110</p>
+        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 10:00 AM - 4:00 PM</p>
+        <p>Phone: (856) 562-8963</p>
+        <p>Email: info@lunapcs.com</p>
+
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">X</a>
+        </p>
+
+        <small>Your Name</small>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #76aaee;
+    color: #222222;
+}
+
+header {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header h2 {
+    font-weight: normal;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: rgb(197, 44, 44);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+section {
+    background-color: rgb(255, 245, 245);
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 70%;
+    max-width: 700px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.mission {
+    text-align: center;
+}
+
+.product {
+    background-color: #eeeeee;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+th, td {
+    border: 1px solid #222222;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #111111;
+    color: white;
+}
+
+td {
+    background-color: #f2f2f2;
+}
+/* Flexbox */
+
+.product-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.product-column {
+    flex: 1;
+}
+
+.product-column .product {
+    height: auto;
+}
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .product-columns {
+        flex-direction: column;
+    }
+
+    .product-column {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input,
+    textarea,
+    select {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
